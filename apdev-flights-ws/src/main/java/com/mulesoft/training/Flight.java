@@ -12,6 +12,7 @@ public class Flight implements java.io.Serializable, Comparable<Flight> {
 	String destination;
 	double price;
 	String planeType;
+	int totalSeats;
 
 	public Flight()	{
 
@@ -123,6 +124,14 @@ public class Flight implements java.io.Serializable, Comparable<Flight> {
 
 	public void setAvailableSeats(int availableSeats) {
 		this.availableSeats = availableSeats;
+	}
+
+	public int getTotalSeats() {
+		return totalSeats;
+	}
+
+	public void setTotalSeats(int totalSeats) {
+		this.totalSeats = totalSeats;
 	}
 
 	@Override
